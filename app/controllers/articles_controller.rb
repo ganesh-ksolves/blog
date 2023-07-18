@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
 
-  http_basic_authenticate_with name: "admin", password: "root",  except: [:index]
+  http_basic_authenticate_with name: "admin", password: "root",  except: [:index , :show]
 
   def index  #this controller controls this file in the view app/views/articles/index.html.erb
 
